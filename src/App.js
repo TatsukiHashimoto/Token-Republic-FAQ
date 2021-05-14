@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { makeStyles, IconButton, Box, Button, Container, ThemeProvider, createMuiTheme, Typography, Divider } from '@material-ui/core';
+import { makeStyles, IconButton, Box, Button, Container, ThemeProvider, createMuiTheme, Typography, Divider, Accordion } from '@material-ui/core';
 import AccordionFaq from '../src/components/AccordionFaq';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 
@@ -92,7 +92,7 @@ function App() {
                   <Button href="#General">General</Button>
                   <Button href="#MetaMask">MetaMask</Button>
                   <Button href="#Investing">Investing</Button>
-                  <Button href="#Crowdsale">Crowdsale</Button>
+                  <Button href="#CrowdSale">Crowdsale</Button>
                 </Box>
               </div>
               <div id="General">
@@ -144,6 +144,18 @@ function App() {
                   Answer= {" 1. Is Total Supply of Token, this is the number of tokens that are issued when you create a token. You can use the same token on multiple crowdsales, required that the allocation of tokens to each crowdsale does not exceed the total supply of the token.\n\n"+
                   "2. The Crowdsale Token Allocation. This is how many tokens are available to buy via the crowdsale. This supply should equal the amount of funding you want for the crowdsale project i.e you supply 1,000,000 tokens to a crowdsale project these will be sold at the price per token you set."}
                 />
+
+                <AccordionFaq
+                  Topic={"MetaMask"}
+                  Question={"What is MetaMask?"}
+                  Answer={"Metamask is a cryptocurrency wallet that holding your token. Token Republic have collaborated with Metamask to help our client making transaction in a safer and more efficient way. "}
+                />
+
+                <AccordionFaq
+                  Topic={"Invest"}
+                  Question={"How do I use MetaMask to Invest?"}
+                  Answer={"When investing token, use Metamask to input your preferred number of tokens, and Metamask will send you the private key address that hold your tokens. Paste the private key address into Token Republic and complete the investment.  "}
+                />
               </div>
 
               <div id="CrowdSale">
@@ -156,6 +168,30 @@ function App() {
                   Topic={"Fee"}
                   Question = {"Any Crowd Sale Creation Fees?"}
                   Answer= {"Ethereum Mainnet requires a gas fee when issuing tokens and creating a crowdsale. However, there are no additional fees."}
+                />
+
+                <AccordionFaq
+                  Topic="Setup"
+                  Question={"How to start the CrowdSale?"}
+                  Answer={"After login in Token Republic dashboard. Click the “Crowdsale” button and set up crowdsale as required. "}
+                />
+
+                <AccordionFaq
+                  Topic={"Funding"}
+                  Question={"If the funding has not achieved, could I still start my project?"}
+                  Answer={"No, we are running “zero or all” crowdfunds system. If the funds not enough, the project will not start. "}
+                />
+
+                <AccordionFaq 
+                  Topic={"Rewards"}
+                  Question={"I alread invested in a project, where can I receive the rewards?"}
+                  Answer={"Difference project may contain different ways of rewarding methods, go to Project details and check the reward method. Once your reward result is out, you will receive that immediately in your Metamask accounts. "}
+                />
+
+                <AccordionFaq
+                  Topic={"Refund"}
+                  Question={"If the project fail, could I get my refund?"}
+                  Answer={"It depends, project may fail because they run out of budget or estimate the budget wrong. If the project fails by other situation, you may receive the refund within 3-15 working days."}
                 />
               </div>
 
@@ -171,10 +207,58 @@ function App() {
                   Answer= {"1. Is Total Supply of Token, this is the number of tokens that are issued when you create a token. You can use the same token on multiple crowdsales, required that the allocation of tokens to each crowdsale does not exceed the total supply of the token.\n\n"+
                   "2. The Crowdsale Token Allocation. This is how many tokens are available to buy via the crowdsale. This supply should equal the amount of funding you want for the crowdsale project i.e you supply 1,000,000 tokens to a crowdsale project these will be sold at the price per token you set."}
                 />
+
+                <AccordionFaq 
+                  Topic={"Token"}
+                  Question = {"What is a Token?"}
+                  Answer={"Token is a currency that work in Token Republic, you can only use token to invest or set up crowdsales within Token republic. As for tokens, it is a special kind of virtual currency tokens that reside on their own blockchains and represent an asset or utility."}
+                />
+                
+                <AccordionFaq 
+                  Topic={"Token"}
+                  Question={"How could I set up Token"}
+                  Answer={"After login to dashboard, there will be a “Token” button on the top left side of your dashboard. Click it to create your own token or modify it as your interest. "}
+                />
+              </div>
+
+              <div id="Investing">
+                <Divider/>
+                <Typography variant="h6" className={classes.topic}>
+                  Investing
+                </Typography>
+
+                <AccordionFaq 
+                  Topic={"CrowdSale"}
+                  Question={"How could I invest in a CrowdSale?"}
+                  Answer={"First, you need to install Metamask, the application that holding your cryptocurrency. Then connect it with your Token republic account. After all, you are free to browse and invest in any interested crowdsales."}
+                />
+
+                <AccordionFaq
+                  Topic={"Token"}
+                  Question={"I don't have any required token, what should I do?"}
+                  Answer={"Metamask has a Swap token feature, use your exist token and swap them into the token that crowdsale required. Then you can successfully invest in crowdsale. "}
+                />
+
+                <AccordionFaq
+                  Topic={"CrowdSale"}
+                  Question={"Why can I not invest in a seeding CrowdSale"}
+                  Answer={"Seeding crowdsales have 2 phases: Seeding and Funding. Seeding phase is to show your interest in the crowdsale. After that, you may invest the project when it became Funding phase."}  
+                />
+
+                <AccordionFaq
+                  Topic={"CrowdSale"}
+                  Question={"Why my interest CrowdSale disappear?"}
+                  Answer={"The crowdsale may fail to collect enough interest or fund, so it is being cancelled."}
+                />
+
+                <AccordionFaq 
+                  Topic={"CrowdSale"}
+                  Question={"Where can I see how much interest has the project has gotten?"}
+                  Answer={"Go to 'My Investment' and check out the current interest amount of the project."}
+                />  
               </div>
 
             </Container>
-
             <IconButton onClick={handleTop} id="top" className={classes.bringToTopButton}>
                 <KeyboardArrowUpIcon/>
             </IconButton> 
