@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { makeStyles, IconButton, Box, Button, Container, ThemeProvider, createMuiTheme, Typography, Divider, Accordion } from '@material-ui/core';
+import { makeStyles, IconButton, Box, Button, Container, ThemeProvider, createMuiTheme, Typography, Divider } from '@material-ui/core';
 import AccordionFaq from '../src/components/AccordionFaq';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 
