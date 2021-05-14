@@ -272,7 +272,7 @@ function App() {
               <li id="menu-item-1223" className={classes.bottomNavList}><a href="https://tokenrepublic.io/about-us/" className={classes.link}>About Us</a></li>
               <li id="menu-item-1224" className={classes.bottomNavList}><a href="https://tokenrepublic.io/overview/" className={classes.link}>TRG</a></li>
               <li id="menu-item-1225" className={classes.bottomNavList}><a href="https://tokenrepublic.io/partners/" className={classes.link}>Partners</a></li>
-              <li id="menu-item-1226" className={classes.bottomNavList}><a target="_blank" rel="noopener" href="http://tokenrepublic.io/wp-content/uploads/2020/11/Token-Republic-Whitepaper-5.1-5.pdf">Whitepaper</a></li>
+              <li id="menu-item-1226" className={classes.bottomNavList}><a href="http://tokenrepublic.io/wp-content/uploads/2020/11/Token-Republic-Whitepaper-5.1-5.pdf" className={classes.link}>Whitepaper</a></li>
             </ul>					
           </div>
 				</div>
