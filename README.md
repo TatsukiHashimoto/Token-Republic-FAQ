@@ -4,5 +4,5 @@
 
 # Installation
 To install from source, clone the repo
-`npm install`
+`npm install` then
 `npm start`
